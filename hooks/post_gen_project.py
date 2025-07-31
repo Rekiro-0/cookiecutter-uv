@@ -87,7 +87,6 @@ if __name__ == "__main__":
         remove_file("LICENSE_ISC")
         remove_file("LICENSE_APACHE")
 
-    if "{{cookiecutter.layout}}" == "src":
-        if os.path.isdir("src"):
-            remove_dir("src")
-        move_dir("{{cookiecutter.project_slug}}", os.path.join("src", "{{cookiecutter.project_slug}}"))
+    if os.path.isdir("src"):
+        remove_dir("src")
+    move_dir("{{cookiecutter.project_slug}}", os.path.join("src", "{{cookiecutter.project_slug}}"))

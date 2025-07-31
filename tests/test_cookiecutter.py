@@ -35,7 +35,7 @@ def test_using_pytest(cookies, tmp_path):
 
 def test_src_layout_using_pytest(cookies, tmp_path):
     with run_within_dir(tmp_path):
-        result = cookies.bake(extra_context={"layout": "src"})
+        result = cookies.bake()
 
         # Assert that project was created.
         assert result.exit_code == 0

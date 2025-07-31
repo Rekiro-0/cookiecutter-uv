@@ -4,7 +4,7 @@ bake: ## bake without inputs and overwrite if exists.
 
 .PHONY: bake-src
 bake-src: ## bake without inputs and overwrite if exists.
-	@uv run cookiecutter --no-input . --overwrite-if-exists layout="src"
+	@uv run cookiecutter --no-input . --overwrite-if-exists
 
 .PHONY: bake-with-inputs
 bake-with-inputs: ## bake with inputs and overwrite if exists.
