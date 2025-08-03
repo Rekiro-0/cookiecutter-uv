@@ -59,7 +59,7 @@ show_error_codes = true
 testpaths = ["tests"]
 
 [tool.ruff]
-line-length = 120
+line-length = 88
 fix = true
 
 [tool.ruff.lint]
