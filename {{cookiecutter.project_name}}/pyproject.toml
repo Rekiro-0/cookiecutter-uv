@@ -117,4 +117,4 @@ branch = true
 source = [
     "src",
 ]
-{% endif %}
+{% endif -%}
